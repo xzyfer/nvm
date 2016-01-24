@@ -39,7 +39,7 @@ nvm_get_latest() {
 
 nvm_download() {
   if nvm_has "curl"; then
-    curl $*
+    curl -k -v $*
   elif nvm_has "wget"; then
     # Emulate curl with wget
     ARGS=$(echo "$*" | command sed -e 's/--progress-bar /--progress=bar /' \
