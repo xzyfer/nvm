@@ -8,8 +8,6 @@
 
 { # this ensures the entire script is downloaded #
 
-echo "------ hererherehrhherher ----"
-
 NVM_SCRIPT_SOURCE="$_"
 
 nvm_has() {
@@ -42,7 +40,7 @@ nvm_get_latest() {
 nvm_download() {
   if nvm_has "curl"; then
     echo "Using curl"
-    curl -k -v $*
+    curl $*
   elif nvm_has "wget"; then
     echo "Using wget"
     # Emulate curl with wget
