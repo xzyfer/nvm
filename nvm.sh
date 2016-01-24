@@ -8,6 +8,8 @@
 
 { # this ensures the entire script is downloaded #
 
+echo "------ hererherehrhherher ----"
+
 NVM_SCRIPT_SOURCE="$_"
 
 nvm_has() {
